@@ -61,5 +61,94 @@
                     <li>소고기 위에 슬라이스한 참외를 올려주세요.</li>
                     <li>고양이에게 대접하세요.</li>
                 </ol>
+                <style>
+                    table,tr,td{
+                        border: solid 1px black;
+                    }
+                    td{
+                        widows: 100px;
+                    }
+                    </style>
+                    <!-- colspan 열 , rowspan 행-->
+                    <!-- thead, tbody, tfoot-->
+                    <table summary="요약">
+                        <caption>[고양이 간식 브랜드 종류]</caption>
+                        <thead>
+                        <tr>
+                            <th scope="col">캔</th>
+                            <th scope="col">져키</th>
+                            <th scope="col">스낵</th>
+                            <th scope="col">액체</th>
+                            <th scope="col">통살</th>
+                        </tr>
+                    </thead>
+                        <tr>
+                            <td>도모다찌</td> <!-- 가로로 두 칸 사용하기 (열) -->
+                            <td>헬시미요</td> <!-- 세로로 두 칸 사용하기 (행) -->
+                            <td>템테이션</td>
+                            <td>뉴트리플랜</td>
+                            <td>카네토라</td>
+
+                        </tr>
+                        <tr>
+                                <td>내츄럴발란스</td>
+                                <td>더캣츠</td>
+                                <td>내추럴키티</td>
+                                <td>챠오츄르</td>
+                                <td>런치보니또</td>
+
+                            </tr>
+                            <tr>
+                                    <td>프리미요</td>
+                                    <td>바우와우캣</td>
+                                    <td>웰니스캣</td>
+                                    <td>칼리에</td>
+                                    <td>킷캣</td>
+
+                                </tr>
+                                <tr>
+                                        <td>굿프랜드</td>
+                                        <td>비타크래프트</td>
+                                        <td>굿데이</td>
+                                        <td>펫스테이지</td>
+                                        <td>원탑</td>
+    
+                                    </tr>
+                                    <tr>
+                                            <td>내츄럴코어</td>
+                                            <td>완피</td>
+                                            <td>미니베로베로</td>
+                                            <td>펫토리아</td>
+                                            <td>그르르</td>
+        
+                                        </tr>
+            
+                    </table>
+
+                    <style>
+                            table,tr,td{
+                                border: solid 1px black;
+                            }
+                            td{
+                                widows: 100px;
+                            }
+                            </style>
+                             <table>
+                            <tr>
+                                    <td colspan="2">up</td>
+                                    <td rowspan="2">right</td>
+                                
+                                </tr>
+                                <tr>
+                                        <td rowspan="2">left</td>
+                                        <td>center</td>
+                                       
+                                    </tr>
+                                    <tr>
+                                         
+                                            <td colspan="2">down</td>
+                                           
+                                        </tr>
+                    </table>
     </body>
 </html>
