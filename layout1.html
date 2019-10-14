@@ -6,61 +6,198 @@
         <meta charest="utf-8"/>
         <style>
         header, nav, div, footer, h1, h2, h3, ul, li, img{
-            border: solid 1px black;
-            margin: 5px;
+            /*border: solid 1px black;
+            margin: 5px;*/
         }
-            </style>
+        header>ul>li{
+            float:left; /*둥둥떠다님 : 왼쪽기준*/
+            list-style: none; /* 목록모양(왼쪽 동그라미) : 없음 */
+            padding-left: 10px;
+            padding-right: 10px;
+            border-right: solid 2px gray;
+        }
+        header>ul>li:nth-child(5){
+            border: none; /*경계선 없음*/
+        }
+        header>ul{
+            padding: 0px; /* 안쪽 여백: 0px */
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 100px;
+            margin-right: 100;
+        }
+        .clear{
+            clear: both; /*flot을 해제*/
+            height: 0px; /* 높이 */
+            overflow: hidden; /*넘치면 숨김*/
+        }
+        .float_left{ float: left; }
+        .float_right{ float: right; }
+        header>h1{
+            margin: 0px;
+        }
+        #zoom{
+            margin: 11px;
+        }
+        nav{
+            background-color: #eee;
+        }
+        nav>ul>li{
+            float: left;
+            list-style: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        nav>ul{
+            padding: 0px;
+            margin: 8px;
+        }
+        nav>h2{
+            margin: 0px;
+        }
+        div>section:nth-child(1){
+            background-color: #98f;
+        }
+        div>section:nth-child(2){
+            background-color: #5d9;
+        }
+        div>section:nth-child(3){
+            background-color: #f76;
+        }
+        div>section:nth-child(4){
+            background-color: #ec5;
+        }
+        .content_part{
+            width: 480px;
+        }
+    </style>
     </head>
     <body>
         <div id="wrap">
             <header>
-                <h1>
+                <h1 class="float_left">
                     <img src="media/logo.png"/>
                 </h1>
-                <ul>
+                <ul class="float_left">
                     <li>ABOUT</li>
                     <li>SERVICES</li>
                     <li>WORKS</li>
                     <li>BLOG</li>
                     <li>CONTACT US</li>
+                    <div class="clear"></div>
                 </ul>
-                <div>
+                <div id="zoom" class="float_right">
                     <img src="media/zoom.png"/>
                 </div>
+                <div class="clear"></div>
 
             </header>
             <nav>
-                <h2>See Our Works</h2>
-                <ul>
+                <h2 class="float_left">See Our Works</h2>
+                <ul class="float_right">
                     <li>Web Design</li>
                     <li>Icons</li>
                     <li>Illustlations</li>
                     <li>Misc</li>
+                    <div class="clear"></div>
                 </ul>
+                <div class="clear"></div>
             </nav>
-            <div>
-                <section>
-                    <h3>Web Design</h3>
-                    <div>
-                        <img src="media/iphone_app.png"/>
-                        <dl>
-                            <dt>Lorem ipsum dolor sit amet</dt>
-                            <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper. </dd>
-                        </dl>
-                    </div>
-                    <div>
-                            <img src="media/john_henry.png"/>
-                            <dl>
-                                <dt>Lorem ipsum dolor sit amet</dt>
-                                <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.  </dd>
-                            </dl>
-                    </div>
-                </section>
-                <section></section>
-                <section></section>
-                <section></section>
+        <div>
+            <section>
+                <h3>Web Design</h3>
+                <div class="content_part">
+                    <img src="media/iphone_app.png"/>
+                    <dl>
+                        <dt>Lorem ipsum dolor sit amet</dt>
+                        <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper. </dd>
+                    </dl>
+                </div>
+                <div class="content_part">
+                    <img src="media/john_henry.png"/>
+                    <dl>
+                        <dt>Lorem ipsum dolor sit amet</dt>
+                        <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.  </dd>
+                    </dl>
+                </div>
+            </section>
+            <section>
+                <h3>Icons</h3>
+                <div class="content_part">
+                    <img src="media/coffee.png"/>
+                    <dl>
+                        <dt>Lorem ipsum dolor sit amet</dt>
+                        <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper. </dd>
+                    </dl>
+                </div>
+                <div class="content_part">
+                    <img src="media/tv.png"/>
+                    <dl>
+                        <dt>Lorem ipsum dolor sit amet</dt>
+                        <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.  </dd>
+                    </dl>
+                </div>
+            </section>
+            <section>
+                <h3>illustrations</h3>
+                <div class="content_part">
+                    <img src="media/bird.png"/>
+                    <dl>
+                        <dt>Lorem ipsum dolor sit amet</dt>
+                        <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper. </dd>
+                    </dl>
+                </div>
+                <div>
+                    <img src="media/egg.png"/>
+                    <dl class="content_part">
+                        <dt>Lorem ipsum dolor sit amet</dt>
+                        <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.  </dd>
+                    </dl>
+                </div>
+            </section>
+            <section>
+                <h3>Miscellaneous</h3>
+                <div class="content_part">
+                    <img src="media/roket.png"/>
+                    <dl>
+                        <dt>Lorem ipsum dolor sit amet</dt>
+                        <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper. </dd>
+                    </dl>
+                </div>
+                <div class="content_part">
+                    <img src="media/box.png"/>
+                    <dl>
+                        <dt>Lorem ipsum dolor sit amet</dt>
+                        <dd>Consectetur adipiscing elit. Suspendisse sed leo tellus. Praesent nec vehicula ligula, non laoreet ligula. Maecenas at massa eget orci porttitor semper.  </dd>
+                    </dl>
+                </div>
+            </section>
+                
             </div>
-            <footer>footer</footer>
+            <footer>
+                <ul>
+                    <li>Home</li>
+                    <li>About</li>
+                    <li>Service</li>
+                    <li>Work</li>
+                    <li>Blog</li>
+                    <li>Contact us</li>
+                </ul>
+                <p>
+                    ⓒ 2013 BlueBox. All Right Reserved.
+                </p>
+                <p>
+                    the loges in the design are the property of their respective owners/copyright holders.
+                </p>
+                <ul>
+                    <li><img src="media/facebook.png"></li>
+                    <li><img src="media/in.png"></li>
+                    <li><img src="media/twit.png"></li>
+                    <li><img src="media/p.png"></li>
+                    <li><img src="media/baseball.png"></li>
+                    <li><img src="media/google.png"></li>
+                </ul>
+            </footer>
         </div>
     </body>
 </html>
