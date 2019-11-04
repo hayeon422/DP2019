@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <a href="index.html">latout1</a>
+        <tittle>layout</tittle>
+        <meta charset="utf-8"/>
+        <style>
+        /*css입력하는곳*/
+          header{
+              background-color:#02918c;
+              color: white; /* 글자 색상은 상속 됩니다 */
+          }
+          header>h1>span:nth-child(2){
+              color: #cfc91d
+          }
+          header>nav>ul{
+              margin: 12px 0px; /* 상하좌우 */
+          }
+          header>h1{
+              margin: 0px;
+          }
+          header>nav>ul>li{
+              float: left;
+              list-style: none;
+              padding: 0px 10px; /* 상하좌우 */
+          }
+          #warp{
+
+          }
+          .clear{
+              clear: both; /* float을 해제한다 */
+              height: 0px; /* 높이 : 0px; */
+              overflow: hidden; /* 넘치면: 숨김; */
+          }
+          .float_left{
+              float: left;
+          }
+          .float_right{
+              float: right;
+          }
+          #main_visual{
+              /* height: 400px; */
+              background-image: url("media/layout2_visual.jpg");
+              background-size: auto 100%; /* 가로 세로 */
+              background-size: cover; /* 표지 처럼 */
+              background-repeat: no-repeat; /* 반복 형식 */
+              /* repeat, no-repeat, repeat-x, repeat-y */
+              background-color: black;
+              background-position: 50% 50%; /* 가로 세로 */
+
+              color: white;
+              text-align: center;
+              padding: 100px 0px;
+          }
+          #main_visual>h2{
+              font-size: 40px;
+              letter-spacing: 15px;
+              margin: 8px 0px;
+          }
+          #top_tittle{
+              font-size: 20px;
+          }
+          #bottom_tittle{
+              font-size: 15px;
+          }
+          #butten_container{
+              margin-top: 100px;
+          }
+          section{
+              text-align: center;
+          }
+          section>h3{
+              color: #02918c;
+          }
+          section li{
+              float: left;
+              list-style: none;
+              width: 25%; /* 100 / 4 = 25 */
+          }
+          section ul{
+              padding: 0px;
+          }
+          section dd{
+              margin: 0px;
+          }
+        </style>
+    </head>
+    <body>
+        <div id="warp"></div>
+          <header>
+                <h1 class="float_left">
+                    <span>MY</span><span>POLIO</span>
+                    <!-- div span 의미를 가지고 있지 않은 구획 나누기 -->
+                </h1>
+                <nav class="float_right">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT ME</li>
+                        <li>SERVICE</li>
+                        <li>MT WORK</li>
+                        <li>CONTACT ME</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+          </header>
+          <div id="main_visual">
+              <div id="top_tittle">
+                  Lorem ipsum ddolor sit iusmod tempor
+              </div>
+              <h2>
+                  INCIDIDUNT BORE
+              </h2>
+              <div id="bottom_tittle">
+                  Orem ipsum dolor sit amet, consectetur
+              </div>
+              <div id="butten_container">
+                  <img src="media/layout2_button.jpg">
+              </div>
+          </div>
+          <section>
+              <h3>ABOUT ME</h3>
+              <P>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                    dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat duis aute irure dolor.
+              </P>
+              <ul>
+                  <li>
+                      <img src="media/layout2_icon1.jpg"
+                      <dl>
+                          <dt>Title goes here</dt>
+                          <dd>
+                                onsectetur adipisicing elit, sedo eiusmod 
+                                tempor incidi
+                                et dolorerserss eerhfre mag.
+                          </dd>
+                      </dl>
+                  </li>
+                  <li>
+                        <img src="media/layout2_icon1.jpg"
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                  onsectetur adipisicing elit, sedo eiusmod 
+                                  tempor incidi
+                                  et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                     <li>
+                        <img src="media/layout2_icon1.jpg"
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                  onsectetur adipisicing elit, sedo eiusmod 
+                                  tempor incidi
+                                  et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="media/layout2_icon1.jpg"
+                        <dl>
+                            <dt>Title goes here</dt>
+                            <dd>
+                                    onsectetur adipisicing elit, sedo eiusmod 
+                                    tempor incidi
+                                    et dolorerserss eerhfre mag.
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+              </ul>
+          </section>
+          <section>content2</section>
+        </div>
+    </body>
+</html>
