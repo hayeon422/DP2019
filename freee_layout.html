@@ -1,10 +1,229 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
     <head>
+        
+            <a href="index.html">돌아가기</a>
         <tittle></tittle>
+        <meta charset="utf-8"/>
+        <style>
+        /*css입력하는곳*/
+          header{
+              background-color:#ffffff;
+              color: rgb(255, 133, 133); /* 글자 색상은 상속 됩니다 */
+              padding: 10px 50px;
+                text-align: center;
+            }
+          }
+          header>h1>span:nth-child(2){
+              color: #cfc91d
+          }
+          header>nav>ul{
+              margin: 12px 0px; /* 상하좌우 */
+          }
+          header>h1{
+              margin: 0px;
+          }
+          body{
+              margin:0px;
+          }
+          header>nav>ul>li{
+              float: left;
+              list-style: none;
+              padding: 0px 10px; /* 상하좌우 */
+          }
+          #warp{
+              min-width: 1000px;
+              max-width: 1920px;
+              margin-right: auto;
+              margin-left: auto;
+
+          }
+          .clear{
+              clear: both; /* float을 해제한다 */
+              height: 0px; /* 높이 : 0px; */
+              overflow: hidden; /* 넘치면: 숨김; */
+          }
+          .float_left{
+              float: left;
+          }
+          .float_right{
+              float: right;
+          }
+          #main_visual{
+              /* height: 400px; */
+              background-image: url("media/sooni1.jpg");
+              background-size: auto 100%; /* 가로 세로 */
+              background-size: cover; /* 표지 처럼 */
+              background-repeat: no-repeat; /* 반복 형식 */
+              /* repeat, no-repeat, repeat-x, repeat-y */
+              background-color: black;
+              background-position: 50% 50%; /* 가로 세로 */
+
+              color: rgb(255, 218, 98);
+              text-align: center;
+              padding: 100px 0px;
+          }
+          #main_visual>h2{
+              font-size: 40px;
+              letter-spacing: 15px;
+              margin: 8px 0px;
+          }
+          #top_tittle{
+              font-size: 20px;
+          }
+          #bottom_tittle{
+              font-size: 15px;
+          }
+          #butten_container{
+              margin-top: 100px;
+          }
+          section{
+              text-align: center;
+          }
+          section>h3{
+              color: #ff8484;
+              margin: 30px 0px;
+          }
+          section>p{
+              margin: 30px 0px;
+              padding: 0px 50px;
+          }
+          section>#about_list>li{
+              float: left;
+              list-style: none;
+              width: 25%; /* 100 / 4 = 25 */
+              width: calc(25% - (1px / 4 * 3) - 25px - 25px);
+
+              border-right: solid 1px #ccc;
+              padding: 25px;
+          }
+          section>#about_list>li:nth-child(4){
+              border: none;
+          }
+          section>#about_list>ul{
+              padding: 0px 80px; /* 상하좌우 */
+          }
+          section dd{
+              margin: 0px;
+          }
+          section>#work_list{
+              padding: 0px 80px; /* 상하좌우 */
+              margin: 0px;
+          }
+          section>#work_list>li{
+              float: left;
+              list-style: none;
+              width: 25%;
+          }
+          section>#work_list img{
+              width: 100%; /* 내가 쓸 수 있는 공간 */
+              display: inline;
+              display: block;
+          }
+        
+        </style>
     </head>
     <body>
-
+        <div id="warp"></div>
+          <header>
+                <div>
+                        <h1>
+                            <img src="media/logo_1.png" />
+                        </h1>
+                        <div class="clear"></div>
+                    </div>
+                <h1 class="float_left">
+                    <span>SOONI</span><span>BOOUNG</span>
+                    <!-- div span 의미를 가지고 있지 않은 구획 나누기 -->
+                </h1>
+                <nav class="float_right">
+                    <ul>
+                        <li>HOME</li>
+                        <li>ABOUT ME</li>
+                        <li>SERVICE</li>
+                        <li>MT WORK</li>
+                        <li>CONTACT ME</li>
+                        <div class="clear"></div>
+                    </ul>
+                </nav>
+                <div class="clear"></div>
+          </header>
+          <div id="main_visual">
+              <div id="top_tittle">
+                  THE WHOLE OF MY LIFE
+              </div>
+              <h2>
+                  SOONI & BOOUNGI
+              </h2>
+              <div id="bottom_tittle">
+                  I'm happy to have you.
+              </div>
+              <div id="butten_container">
+                  <img src="media/layout2_button.jpg">
+              </div>
+          </div>
+          <section>
+              <h3>ABOUT MY LOVELY CATS</h3>
+              <P>
+                    Our babies love empty food and they sleep a lot. But it's so lovely and for me, these are all I have.
+              </P>
+              <ul id="about_list">
+                  <li>
+                      <img src="media/layout2_mimi1.png">
+                      <dl>
+                          <dt>MY LOVE SOONI</dt>
+                          <dd>
+                                Sooni was born in 2016 and she is the mother of an BOOUNGI. It's a Turkish Angora with white fur and it's really really cute.
+                          </dd>
+                      </dl>
+                  </li>
+                  <li>
+                        <img src="media/layout2_mimi2.png">
+                        <dl>
+                            <dt>SOONI'S FAVORITE</dt>
+                            <dd>
+                                    I like warm places and corner places. He likes fishy tuna and is very cute to people who are introverts and trust him.
+                            </dd>
+                        </dl>
+                    </li>
+                     <li>
+                        <img src="media/layout2_mimi1.png">
+                        <dl>
+                            <dt>MY LOVE BOOUNGI</dt>
+                            <dd>
+                                    The owl was born in 2017 and she is the daughter of Soon-i. It is a Norwegian forest cat with very cute fur. He's a cute guy, but he's a coward with a lot of fear.
+                            </dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="media/layout2_mimi2.png">
+                        <dl>
+                            <dt>BOOUNGI'S FAVORITE</dt>
+                            <dd>
+                                   I like playing toys very much, and I like to eat something that is sour and dirty. I follow my mother very obediently and then I am. But I'm happy.
+                            </dd>
+                        </dl>
+                    </li>
+                    <div class="clear"></div>
+              </ul>
+          </section>
+          <section>
+              <h3>GALLERY</h3>
+              <P>
+                    Look at my beautiful babies.
+              </P>
+              <ul id="work_list">
+                  <li><img src="media/booung_1.jpg"></li>
+                  <li><img src="media/booung_2.jpg"></li>
+                  <li><img src="media/booung-3.jpg"></li>
+                  <li><img src="media/booung_4.jpg"></li>
+                  <li><img src="media/booung_5.jpg"></li>
+                  <li><img src="media/booung_6.jpg"></li>
+                  <li><img src="media/booung_7.jpg"></li>
+                  <li><img src="media/booung_8.jpg"></li>
+              </ul>
+              <div class="clear"></div>
+          </section>
+        </div>
     </body>
-    <footer></footer>
 </html>
